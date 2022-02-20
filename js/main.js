@@ -6,7 +6,7 @@ var cx = cw / 2,  cy = ch / 2;
 var rad = Math.PI / 180;
 var howMany = 500;
 var p = [];
-var colors = ["242,41,41", "222,80,80", "247,111,111", "255,145,145", "252,199,199"];
+var colors = ["21,177,209", "9,182,225", "24,242,227", "86,245,213", "20,216,219"];
 ctx.strokeStyle = "white";
 ctx.globalAlpha = .7;
 
