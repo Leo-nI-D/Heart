@@ -1,5 +1,66 @@
-#c {
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.heart {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: relative;
+  transform: rotate(45deg);
+  &::before,
+  &::after {
+    content: "";
     display: block;
-    margin: 50px auto;
-    margin: calc(50vh - 250px) auto;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
   }
+
+  &::before {
+    top: -100px;
+    left: 0;
+  }
+
+  &::after {
+    top: 0;
+    left: -100px;
+  }
+}
+.wrapper{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ width: 100%;
+}
+
+img {
+  width: 500px;
+  height: 700px;
+}
+.i {
+  width: 400px;
+  height: 800px;
+}
+
+@media (max-width: 376px) {
+  .heart,
+  .heart::before,
+  .heart::after {
+    width: 180px;
+    height: 180px;
+  }
+  img{
+    width: 400px;
+    height: 600px;
+  }
+  .i{
+    width: 300px;
+    height: 800px;
+  }
+}
